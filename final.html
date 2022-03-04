@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>path project</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/template.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
+
+<style>
+  /*------principles------*/
+  .prin{
+    position: relative;
+    top:65px;
+    font-family: 'ogg','Montserrat',sans-serif;
+    font-size: 60px;
+    color:white;
+    z-index:4;
+    cursor:pointer;
+
+  }
+  .princeim{
+    position:absolute;
+    left:38%;
+    top:230px;
+    display:none;
+    z-index:10;
+  }
+    .prin:hover + .princeim {
+      display:block;
+    }
+
+    .prin:hover{
+      color:yellow;
+    }
+
+
+
+  .vaseim02{
+    position:absolute;
+    left:46%;
+    top:550px;
+    z-index:3;
+
+  }
+  .vaseim03{
+    position:absolute;
+    left:29%;
+    top:80px;
+    z-index:3;
+
+
+  }
+
+  .circleback{
+    position:absolute;
+    left:21%;
+    top:-15px;
+
+    z-index:0;
+
+    }
+
+  .line05{
+    position: absolute;
+    height: 100px;
+    top:200px;
+    left:20%;
+    width:2px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  }
+  .name{
+    font-family: 'ordinary','Montserrat',sans-serif;
+    font-weight: 100;
+    font-size:25px;}
+  /*---balance---*/
+  .balance{
+    color:white;
+    position:absolute;
+    left:13%;
+    top:270px;
+    z-index:3;
+    cursor:pointer;
+  }
+
+  .balanceim{
+    position:absolute;
+    left:21%;
+    top:-15px;
+    display:none;
+    z-index:4;
+  }
+
+  .balance:hover + .balanceim {
+    display:block;
+  }
+  .balance:focus + .balanceim {
+    display:block;
+  }
+
+  .balance:hover{
+    color:yellow;
+  }
+
+  /*----harmony*/
+
+  .harmony{
+    color:white;
+    position:absolute;
+    left:75%;
+    top:200px;
+    z-index:3;
+    cursor:pointer;
+
+  }
+
+  .harmonyim{
+    position:absolute;
+    left:21%;
+    top:-15px;
+    display:none;
+    z-index:4;
+  }
+
+  .harmony:hover + .harmonyim {
+    display:block;
+  }
+  .harmony:focus + .harmonyim {
+    display:block;
+  }
+
+  .harmony:hover{
+    color:yellow;
+  }
+
+  /*----movement-*/
+
+  .line06{
+    position: absolute;
+    height: 100px;
+    top:130px;
+    left:83%;
+    width:2px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  }
+  .movement{
+    color:white;
+    position:absolute;
+    left:65%;
+    top:700px;
+    z-index:3;
+    cursor:pointer;
+
+  }
+  .moveall{
+    display:none;
+  }
+
+  .moveim01{
+    position:absolute;
+    left:3%;
+    top:-50px;
+    z-index:4;
+    animation:moveim01 6s infinite linear;
+
+
+    }
+    @keyframes moveim01{
+      0%{ transform: left:3%; top:-50px;}
+      25%{ transform: left:8%; top:-10px;}
+      50%{ transform: left:10%; top:20px;}
+      75%{ transform: left:6%; top:-10px;}
+      100%{transform: left:3%; top:-50px;}
+
+    }
+  .moveim02{
+    position:absolute;
+    left:65%;
+    top:50px;
+    z-index:3;
+    animation:moveim02 6s infinite linear;
+
+
+  }
+  @keyframes moveim02{
+      0%{ transform: left:65%; top:50px;}
+      25%{ transform: left:60%; top:120px;}
+      50%{ transform: left:55%; top:100px;}
+      75%{ transform: left:60%; top:70px;}
+      100%{transform: left:65%; top:50px;}
+
+    }
+
+
+    .movement:hover + .moveall {
+      display:block;
+    }
+    .movement:focus + .moveall {
+      display:block;
+    }
+
+    .movement:hover{
+      color:yellow;
+    }
+
+  .line07{
+    position: absolute;
+    height: 100px;
+    top:670px;
+    left:75%;
+    width:2px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+  <a href="index.html"><h1> PATH PROJECT</h1></a>
+
+  <div class="restart"><a href="material.html" class="back">Back</a></div>
+  <img class="upicon" src="picture/upicon.png" width="40">
+  <!-- <div class="circle"></div> -->
+
+  <div class="bg03">
+    <div class="prin"><p>Principles</p></div>
+    <img class="princeim" src="picture/principles.gif" width="350">
+    <div class="line05"></div>
+    <div class="line06"></div>
+    <div class="line07"></div>
+    <img class="circleback" src="picture/circleback.png" width="850">
+    <div class="name balance" tabindex="8">Balance</div>
+    <img class="balanceim" src="picture/balance.png" width="850">
+    <div class="name harmony" tabindex="9">Harmony</div>
+    <img class="harmonyim" src="picture/harmony.png" width="850">
+    <div class="name movement" tabindex="10">Movement</div>
+    <div class="moveall">
+    <img class="moveim01" src="picture/movecircle.png" width="600">
+    <img class="moveim02" src="picture/movecircle.png" width="600">
+    </div>
+    <img class="vaseim02" src="picture/vase02.png" width="120">
+    <img class="vaseim03" src="picture/flower.png" width="600">
+
+
+    <!-- <img class="harmonyim" src="picture/flower.png" width="800"> -->
+
+
+
+
+    <!-- principles -->
+
+  </div>
+  </body>

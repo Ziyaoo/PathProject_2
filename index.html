@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>path project</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/template.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
+
+  <style>
+
+
+    .lic{
+      position: relative;
+      top:300px;
+
+      font-family: 'ogg','Montserrat',sans-serif;
+      font-size: 60px;
+      color:#41342B;
+      z-index:3;
+    }
+
+    .licphoto{
+      position:absolute;
+      z-index:2;
+      left:20%;
+      display:none;
+    }
+
+    .lic:hover + .licphoto {
+      display:block;
+    }
+
+    .lic:hover{
+      color:#FAFF1A
+    }
+
+    .line01{
+      position: relative;
+      /* border-left: 2px solid #41342B; */
+      height: 240px;
+      top:330px;
+      left:50%;
+      width:2px;
+      background: linear-gradient(to bottom, rgba(65,52,43,0), rgba(65,52,43,1));
+    }
+
+    .br{
+      position: relative;
+      top:350px;
+      font-family: 'ogg','Montserrat',sans-serif;
+      font-size: 60px;
+      color:#41342B;
+      z-index:3;
+      }
+
+    .brookim{
+      position:absolute;
+      z-index:2;
+      top:500px;
+      left:55%;
+      display:none;
+    }
+
+    .br:hover + .brookim {
+      display:block;
+    }
+
+    .br:hover{
+      color:#FAFF1A
+    }
+
+
+      .icon01{
+      position:absolute;
+      left:47.5%;
+      top:200px
+
+
+
+        }
+
+
+      .line02{
+        position: relative;
+        height: 240px;
+        top:380px;
+        left:50%;
+        width:2px;
+        background: linear-gradient(to bottom, rgba(65,52,43,0), rgba(65,52,43,1));
+      }
+      .info{
+        position: relative;
+        top:425px;
+        font-family: 'ordinary','Montserrat',sans-serif;
+        font-size:20px;
+        color:#41342B;
+      }
+
+      /* start button*/
+      .circle02{
+
+        left:46.5%;
+        top:480px;
+        position: relative;
+        display:flex;
+        align-item:center;
+        border: 2px solid #41342B;
+        animation:circle02 3s infinite linear;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+       }
+
+      .circle02:hover{
+        border: 2px solid #FAFF1A;
+      }
+
+
+       @keyframes circle02{
+         0%{ transform: rotate(0deg) ;}
+         25%{ transform: rotate(90deg);}
+         50%{ transform: rotate(180deg);}
+         75%{ transform: rotate(270deg);}
+         100%{transform: rotate(360deg);}
+
+       }
+      /* @keyframes startcircle {
+        0%   {border: 2px solid #41342B; width: 100px;height: 100px;border-radius: 50%;}
+
+        50%  {border: 2px solid #41342B; width: 100px;height: 100px;border-radius: 50%;}
+
+        100% {border: 0px solid #FAFF1A; width: 150px;height: 150px;border-radius: 50%;}
+      } */
+
+
+      .startb{
+        top:34%;
+        position: relative;
+        text-align: center;
+        color:#41342B;
+        font-family: 'ogg','Montserrat', sans-serif;
+        font-size: 25px;
+        left:23%;
+      }
+      .location{
+        color:#41342B;
+        }
+      .location:hover{
+        color:#FAFF1A;
+        }
+
+
+  </style>
+
+
+
+  </head>
+  <body>
+
+    <a href="index.html"><h1> PATH PROJECT</h1></a>
+    <!-- <div class="restart"> Restart </div> -->
+    <!-- <div class="circle"></div> -->
+    <img class="upicon" src="picture/upicon.png" width="40">
+
+    <div class="bg">
+      <!-- <video autoplay muted loop id="myVideo">
+    <source src="bg01no.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+      </video> -->
+      <img class="icon01" src="picture/icon01.png" width="80" >
+      <div class="lic"><p>Long Island City</p></div>
+      <img class="licphoto" src="picture/licphotos.gif" width="350">
+      <div class="line01"></div>
+
+ 		  <div class="br"><p>Brookyn</p></div>
+      <img class="brookim" src="picture/brookim.gif" width="350">
+      <div class="line02"></div>
+      <div class="info">
+      <p>Time | Sat 11:30 am - 1 pm</p>
+      <p><a href="https://g.page/debutea-bk?share" target="_blank" class="location">Location | Debutea Brooklyn, 71 smith st, Brooklyn, New York, NY 11201</a></p>
+      <p>Flower Artist | Ye Zi</p>
+      </div>
+
+	 		<div class="circle02"><a href="material.html" class="startb"> Start</a></div>
+      <audio loop autoplay>
+
+			<source src="HeySun.mp3" type="audio/filetype"/>
+			Your browser does not support the audio element.
+		  </audio>
+
+     </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>path project</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/template.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
+    <style>
+
+      /* Thing you need content stylesheet*/
+      .things{
+        position: relative;
+        top:300px;
+        font-family: 'ogg','Montserrat',sans-serif;
+        font-size: 60px;
+        color:white;
+        z-index:3;
+      }
+
+      .thingsim{
+        position:absolute;
+        z-index:2;
+        top:100px;
+        left:25%;
+        display:none;
+      }
+
+      .things:hover + .thingsim {
+        display:block;
+      }
+
+      .things:hover{
+        color:#FAFF1A
+      }
+
+      .line03{
+        position: relative;
+        height: 600px;
+        top:330px;
+        left:50%;
+        width:2px;
+        background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+      }
+      .name{
+        font-family: 'ordinary','Montserrat',sans-serif;
+        font-weight: 100;
+        font-size:25px;
+
+
+      }
+  /* vase*/
+
+      .vase{
+        color:white;
+        position:relative;
+        left:38%;
+        top:-140px;
+        cursor:pointer;
+        width:120px;
+      }
+      .vaseim{
+        position:absolute;
+        left:25%;
+        top:500px;
+        display:none;
+      }
+
+      .vase:hover + .vaseim {
+        display:block;
+      }
+      .vase:focus + .vaseim {
+        display:block;
+      }
+
+      .vase:hover{
+        color:yellow;
+      }
+
+
+
+  /* kenzan*/
+
+      .kenzan{
+        color:white;
+        position:relative;
+        left:57%;
+        top:-40px;
+        width:120px;
+        cursor:pointer;
+      }
+
+      .kenzanim{
+        position:absolute;
+        left:68%;
+        top:730px;
+        display:none;
+
+      }
+
+      .kenzan:hover + .kenzanim {
+        display:block;
+      }
+      .kenzan:focus + .kenzanim {
+        display:block;
+      }
+
+      .kenzan:hover{
+        color:yellow;
+      }
+
+  /* scissor */
+      .scissor{
+        color:white;
+        position:relative;
+        left:36%;
+        top:115px;
+        cursor:pointer;
+        width:120px;
+      }
+
+      .scissorim{
+        position:absolute;
+        left:20%;
+        top:900px;
+        display:none;
+      }
+
+      .scissor:hover + .scissorim {
+        display:block;
+      }
+      .scissor:focus + .scissorim {
+        display:block;
+      }
+
+      .scissor:hover{
+        color:yellow;
+      }
+  /* material circle */
+
+      .circle001{
+        left:45%;
+        top:-100px;
+        position: relative;
+        border: 1px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        z-index:4;
+      }
+
+
+      .circle002{
+        left:53%;
+        top:0px;
+        position: relative;
+        border: 1px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        z-index:4;
+      }
+
+      .circle003{
+        left:45%;
+        top:150px;
+        position: relative;
+        border: 1px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        z-index:4;
+      }
+      .number{
+      position:relative;
+      top:10%;
+      font-family: 'ordinary','Montserrat',sans-serif;
+      font-size:23px;
+      text-align: center;
+
+
+      }
+
+/* flower material content stylesheet*/
+      .mate{
+        position: relative;
+        top:400px;
+        font-family: 'ogg','Montserrat',sans-serif;
+        font-size: 60px;
+        color:white;
+        z-index:4;
+      }
+
+      .flowerim{
+        position:absolute;
+        z-index:2;
+        top:1150px;
+        left:55%;
+        display:none;
+      }
+
+      .mate:hover + .flowerim {
+        display:block;
+      }
+
+      .mate:hover{
+        color:#FAFF1A
+      }
+
+
+
+
+      .line04{
+        position: relative;
+        height: 1900px;
+        top:420px;
+        left:50%;
+        width:2px;
+        background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+      }
+
+    /* olive branch */
+      .olive{
+        color:white;
+        position:relative;
+        left:31%;
+        top:-1235px;
+        z-index:3;
+        cursor:pointer;
+      }
+      .oliveim{
+        position:absolute;
+        left:8%;
+        top:1500px;
+        z-index:0;
+        display:none;
+      }
+
+      .olive:hover + .oliveim {
+        display:block;
+      }
+      .olive:focus + .oliveim {
+        display:block;
+      }
+
+      .olive:hover{
+        color:yellow;
+      }
+/* yellow */
+
+
+      .yellow{
+        color:white;
+        position:relative;
+        left:57%;
+        top:-887px;
+        z-index:3;
+        cursor:pointer;
+      }
+      .yellowim{
+        position:absolute;
+        left:60%;
+        top:1750px;
+        z-index:0;
+        display:none;
+      }
+      .yellow:hover + .yellowim {
+        display:block;
+      }
+      .yellow:focus + .yellowim {
+        display:block;
+      }
+
+      .yellow:hover{
+        color:yellow;
+      }
+
+    /* poppy */
+
+      .poppy{
+        color:white;
+        position:relative;
+        left:38%;
+        top:-490px;
+        z-index:3;
+        cursor:pointer;
+      }
+
+      .poppyim{
+        position:absolute;
+        left:10%;
+        top:2300px;
+        z-index:0;
+        display:none;
+      }
+      .poppy:hover + .poppyim {
+        display:block;
+      }
+      .poppy:focus + .poppyim {
+        display:block;
+      }
+
+      .poppy:hover{
+        color:yellow;
+      }
+
+  /* rosehip */
+
+      .rosehip{
+        color:white;
+        position:relative;
+        left:57%;
+        top:-170px;
+        z-index:3;
+        cursor:pointer;
+      }
+
+      .rosehipim{
+        position:absolute;
+        left:60%;
+        top:2800px;
+        z-index:0;
+        display:none;
+      }
+      .rosehip:hover + .rosehipim {
+        display:block;
+      }
+      .rosehip:focus + .rosehipim {
+        display:block;
+      }
+
+      .rosehip:hover{
+        color:yellow;
+      }
+
+  /* flower circle */
+
+      .circle0001{
+        left:45%;
+        top:-1200px;
+        position: relative;
+        border: 1px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        z-index:4;
+      }
+
+
+
+      .circle0002{
+        left:53%;
+        top:-850px;
+        position: relative;
+        border: 1px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+      }
+
+      .circle0003{
+        left:45%;
+        top:-450px;
+        position: relative;
+        border: 1px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+      }
+      .circle0004{
+        left:53%;
+        top:-130px;
+        position: relative;
+        border: 1px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+      }
+
+/*  next button*/
+      .next{
+        top:34%;
+        position: relative;
+        text-align: center;
+        color:#FFFFFF;
+        font-family: 'ogg','Montserrat', sans-serif;
+        font-size: 25px;
+        left:23%;
+      }
+      .circle03{
+
+        left:46.5%;
+        top:180px;
+        position: relative;
+        display:flex;
+        align-item:center;
+        border: 2px solid #FFFFFF;
+        animation:circle02 3s infinite linear;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+       }
+
+      .circle03:hover{
+        border: 2px solid #FAFF1A;
+      }
+
+
+       @keyframes circle02{
+         0%{ transform: rotate(0deg) ;}
+         25%{ transform: rotate(90deg);}
+         50%{ transform: rotate(180deg);}
+         75%{ transform: rotate(270deg);}
+         100%{transform: rotate(360deg);}
+
+       }
+
+
+
+    </style>
+
+  </head>
+  <body>
+    <a href="index.html"><h1> PATH PROJECT</h1></a>
+    <div class="restart"> <a href="index.html" class="back">Back</a> </div>
+    <img class="upicon" src="picture/upicon.png" width="40">
+    <!-- <div class="circle"></div> -->
+
+    <div class="bg02">
+      <!-- <video autoplay muted loop id="myVideo">
+    <source src="picture/bg03.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+      </video> -->
+    <div class="things"><p>Things You Need</p></div>
+    <img class="thingsim" src="picture/thingsneed.gif" width="350">
+    <div class="line03"></div>
+    <!-- 01 vase -->
+    <div class="circle001"><div class="number">1</div></div>
+    <div class="name vase" tabindex="1"> A vase</div>
+    <img class="vaseim" src="picture/vase02.png" width="160">
+
+
+    <!-- 02 kenzan --><!--tabindex="2"-->
+    <div class="circle002"><div class="number">2</div></div>
+    <div class="name kenzan" tabindex="2">A kenzan</div>
+    <img class="kenzanim" src="picture/kenzan.png" width="160">
+    <!-- 03 scissor -->
+    <div class="circle003"><div class="number">3</div></div>
+    <div class="name scissor" tabindex="3">A scissor</div>
+    <img class="scissorim" src="picture/scissor.png" width="240">
+
+    <!--------------- flowermaterial section ---------------------->
+    <div class="mate"><p>Flower Material</p></div>
+    <img class="flowerim" src="picture/flowersm.gif" width="350">
+    <div class="line04"></div>
+    <!-- 01 olive -->
+    <div class="circle0001"><div class="number">1</div></div>
+    <div class="name olive" tabindex="4">Olive Branches</div>
+    <img class="oliveim" src="picture/olivebranch.png" width="600">
+    <!--  02 yellow-->
+    <div class="circle0002"><div class="number">2</div></div>
+    <div class="name yellow" tabindex="5">Yellow Acacia</div>
+    <img class="yellowim" src="picture/yacacia.png" width="500">
+    <!-- 03 poppy -->
+    <div class="circle0003"><div class="number">3</div></div>
+    <div class="name poppy" tabindex="6">Poppy</div>
+    <img class="poppyim" src="picture/poppy.png" width="500">
+    <!-- 04 rosehip -->
+    <div class="circle0004"><div class="number">4</div></div>
+    <div class="name rosehip" tabindex="7">Rosehip</div>
+    <img class="rosehipim" src="picture/rosehip.png" width="400">
+
+    <div class="circle03"><a href="final.html" class="next"> Next</a></div>
+
+
+
+
+    </div>
+
+
+
+  </body>
+</html>
